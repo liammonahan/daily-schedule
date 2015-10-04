@@ -1,0 +1,56 @@
+
+\documentclass{article}
+
+\usepackage{array}
+\newcolumntype{L}[1]{>{\raggedright\let\newline\\\arraybackslash\hspace{0pt}}m{#1}}
+\newcolumntype{C}[1]{>{\centering\let\newline\\\arraybackslash\hspace{0pt}}m{#1}}
+\newcolumntype{R}[1]{>{\raggedleft\let\newline\\\arraybackslash\hspace{0pt}}m{#1}}
+
+\usepackage{tikz}
+\usetikzlibrary{decorations.pathreplacing}
+
+\usepackage{multirow,bigdelim}
+\renewcommand{\arraystretch}{1.7}
+
+\begin{document}
+
+\begin{center}
+
+\begin{tabular}{| L{3.8cm} | R{0.9cm} | L{5.2cm} |}
+ \hline
+ \multirow{3}{3.8cm}{The morning question: What good shall I do this day?}
+ &
+ 5am
+ & 
+ \multirow{3}{5.2cm}{Rise, wash, and address \textit{Powerful Goodness}; contrive day's business and take the resolution of the day; prosecute the present study; and breakfast.}
+ \\ \cline{2-2}
+  & 6 & \\ \cline{2-2}
+  & 7 & \\ \cline{2-3}
+  & 8 &
+  \multirow{3}{5.2cm}{Work.} \\ \cline{2-2}
+  & 9 &  \\ \cline{2-2}
+  & 10 &  \\ \cline{2-2}
+  & 11 & \\ \cline{2-3}
+  & 12pm & \multirow{2}{5.2cm}{Read, respond to correspondence, a game, and dine.} \\ \cline{2-2}
+  & 1 &  \\ \cline{2-3}
+  & 2 & \\ \cline{2-2}
+  & 3 & Work. \\ \cline{2-2}
+  & 4 & \\ \cline{2-2}
+  & 5 & \\ \cline{2-3}
+  & 6 & \multirow{4}{5.2cm}{Put things in their places, exercise, supper, music, or diversion, or conversation; \\ examination of the day.} \\ \cline{2-2}
+  & 7 & \\ \cline{2-2}
+  & 8 & \\ \cline{2-2}
+ \multirow{3}{3.8cm}{Evening question: \\What good have I done today?} & 9 &  \\ \cline{2-3}
+  & 10 & \multirow{7}{5.2cm}{Sleep.} \\ \cline{2-2}
+  & 11 & \\ \cline{2-2}
+  & 12am & \\ \cline{2-2}
+  & 1 & \\ \cline{2-2}
+  & 2 & \\ \cline{2-2}
+  & 3 & \\ \cline{2-2}
+  & 4 & \\ \cline{2-2}
+ \hline
+\end{tabular}
+
+\end{center}
+
+\end{document}​
